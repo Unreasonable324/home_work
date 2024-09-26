@@ -8,6 +8,9 @@ export default {
         "dark-green": "#6c846c",
         "light-green": "#dde0cd",
         "light-green-2": "#bcccaf",
+        "light-green-3": "#afb982",
+        "main-text": "#183022",
+        "primary-text": "#485f3b",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
