@@ -4,8 +4,8 @@ import Arrow from '@/components/icons/arrow.vue';
 
 /* пришли с бека */
 const imageL = bgImageL;
-const gradient1 = "linear-gradient(180deg, rgba(173, 180, 148, 0) 0%, #aeb595 100%)";
-const gradient2 = "linear-gradient(180deg, #aeb595 0%, rgba(173, 180, 148, 0) 100%)";
+const gradientDesk = "linear-gradient(180deg, rgba(173, 180, 148, 0) 0%, #aeb595 100%)";
+const gradientMob = "linear-gradient(180deg, #aeb595 0%, rgba(173, 180, 148, 0) 100%)";
 </script>
 <template>
   <div
@@ -14,7 +14,7 @@ const gradient2 = "linear-gradient(180deg, #aeb595 0%, rgba(173, 180, 148, 0) 10
   >
     <div
       class="w-full h-full md:min-h-none min-h-[400px] px-[30px] py-9 text-white flex flex-col md:justify-between gradient"
-      :style="['--gradient1:' + gradient1, '--gradient2:' + gradient2]"
+      :style="['--gradientDesk:' + gradientDesk, '--gradientMob:' + gradientMob]"
     >
       <div class="text-3xl">20-22 сентября</div>
       <a class="text-[40px] flex md:justify-between flex-col md:items-end items-start gap-5 md:flex-row" href="#">
@@ -26,11 +26,11 @@ const gradient2 = "linear-gradient(180deg, #aeb595 0%, rgba(173, 180, 148, 0) 10
 </template>
 <style scoped>
 .gradient {
-  background: var(--gradient1);
+  background: var(--gradientDesk);
 }
 @media screen and (max-width: 769px) {
   .gradient {
-    background: var(--gradient2);
+    background: var(--gradientMob);
   }
 }
 </style>
