@@ -35,19 +35,16 @@ const items = [
 ];
 </script>
 <template>
-  <div class="flex flex-col gap-5 ">
+  <div class="flex flex-col gap-5">
     <div class="text-[40px] font-bold text-main-text"><h2>Что на прилавке</h2></div>
-    <div
-      class="relative circle"
-    >
-      <div class="flex gap-3 overflow-x-auto w-[100%] pb-10    justify-between">
+    <div class="relative circle">
+      <div class="flex gap-3 overflow-x-auto w-[100%] pb-10 justify-between">
         <SliderItem v-for="item in items" :key="item.title" :item="item" />
       </div>
     </div>
   </div>
 </template>
 <style scoped>
-
 .circle {
   @apply before:content-[''] before:absolute before:h-[46px] before:w-[46px] before:bg-light-green-3 before:rounded-full before:right-[14px] before:bottom-[10px];
 }

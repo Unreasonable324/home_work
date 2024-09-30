@@ -11,7 +11,6 @@ defineProps({
     <div
       class="md:min-h-[160px] min-h-[40vw] w-full rounded-[10px] bg-no-repeat bg-cover"
       :style="{ backgroundImage: `url(${item.image})` }"
-      
     ></div>
     <div class="p-4 text-primary-text flex flex-col gap-3 justify-between h-full">
       <div>{{ item.title }}</div>
